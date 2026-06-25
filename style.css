@@ -108,6 +108,57 @@ nav a:hover {
     filter: invert(100%);
 }
 
+/* --- AJUSTES PARA DISPOSITIVOS MÓVEIS (Até 430px) --- */
+@media (max-width: 430px) {
+    /* Ajustes Gerais de padding para evitar corte na tela */
+    .hero-section h3, .hero-section h1, .hero-section p, 
+    .escritorio-section h2, .escritorio-section p,
+    .contato-section h2, .contato-section h3, 
+    .btn-contato-whatsapp, .contato, .redes-contato {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+
+    /* Ajuste de título do Hero */
+    .hero-section h1 {
+        font-size: 2em !important;
+        padding-top: 20px !important;
+    }
+
+    /* Ajuste na seção de equipe para não quebrar o flex */
+    .card-eqp {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .img-eqp img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Ajuste no Footer */
+    footer p {
+        font-size: 1em;
+    }
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    color: var(--dourado);
+}
+
 @media (max-width: 991px) {
     .navbar {
         padding: 6px 12px;
